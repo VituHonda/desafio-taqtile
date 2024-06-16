@@ -3,6 +3,7 @@ Teste técnico da empresa taqtile - https://snack.expo.dev/?platform=web
 
 # Dos requisitos:
 Atualmente não conheço e nem tenho noção de React Native
+
 TS e JS tenho noção mas não muita afinidade
 
 # Desafio
