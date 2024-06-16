@@ -34,3 +34,8 @@ Terça:
 Procurar como é feito o consumo de APIs em RN
 
 Quarta:
+
+# Primeiros passos:
+- instalar node lts
+usar expo para facilitar
+npx create-expo-app "nome do app"
