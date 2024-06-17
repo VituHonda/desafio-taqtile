@@ -1,5 +1,5 @@
 # desafio-taqtile
-Teste técnico da empresa taqtile - [https://snack.expo.dev/?platform=web](https://snack.expo.dev/@taqtile/taqtile-internship-challenge---pokemon)
+Teste técnico da empresa taqtile - https://snack.expo.dev/@taqtile/taqtile-internship-challenge---pokemon
 
 # Dos requisitos:
 Atualmente não conheço e nem tenho noção de React Native
