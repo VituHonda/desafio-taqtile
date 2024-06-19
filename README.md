@@ -35,3 +35,12 @@ Procurar como é feito o consumo de APIs em RN
 
 Quarta:
 Procurar como fazer o share button
+
+Quinta:
+tentar terminar e enviar para saber se é isso mesmo o que foi pedido
+
+Sexta:
+Melhorar se ainda estiver faltando algo
+
+Sábado:
+Entregar do jeito que estiver
