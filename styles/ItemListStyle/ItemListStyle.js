@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
-import {Colors} from '../colors';
+import {Colors} from '../Colors';
 
-export const StyledContainer = styled.View`
+export const StyledItemListContainer = styled.View`
   width: auto;
   height: 60px;
   padding: 12px;

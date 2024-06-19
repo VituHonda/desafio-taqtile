@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { SafeAreaView, ActivityIndicator, FlatList, TouchableOpacity } from 'react-native';
+import { useEffect, useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
+import { ActivityIndicator } from 'react-native';
 import { ItemList } from './ItemList';
+import { StyledListFlatList, StyledTouchableOpacity, StyledSafeAreaView } from '../styles/list-styles/ListStyle';
 
 export default function List(props) {
   const navigation = useNavigation();
@@ -22,7 +23,7 @@ export default function List(props) {
         setList(mappedData);
         setLoading(false);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error('Error on the API with pokemon list', error);
         setLoading(false);
       }
     };
@@ -30,25 +31,25 @@ export default function List(props) {
     fetchData();
   }, []);
 
-  const handleItemPress = (name) => {
-    navigation.navigate('Detalhes', { pokemonName: name });
+  const itemPress = (name, url) => {
+    navigation.navigate('Details', { pokemonName: name, url: url});
   };
 
   return (
-    <SafeAreaView>
+    <StyledSafeAreaView>
       {loading ? (
         <ActivityIndicator size="large" />
       ) : (
-        <FlatList
+        <StyledListFlatList
           data={list}
           renderItem={({ item }) => (
-            <TouchableOpacity onPress={() => handleItemPress(item.name)}>
+            <StyledTouchableOpacity onPress={() => itemPress(item.name, item.url)}>
               <ItemList name={item.name} url={item.url} />
-            </TouchableOpacity>
+            </StyledTouchableOpacity>
           )}
           keyExtractor={(item) => item.name}
         />
       )}
-    </SafeAreaView>
+    </StyledSafeAreaView>
   );
 }

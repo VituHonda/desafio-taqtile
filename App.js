@@ -1,4 +1,3 @@
-import * as React from 'react';
 import List from './components/List';
 import Detail from './components/Details';
 import { NavigationContainer } from '@react-navigation/native';
@@ -10,8 +9,34 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Pokedex Geração 1" component={List} />
-        <Stack.Screen name="Detalhes" component={Detail} />
+        <Stack.Screen
+          name="Pokedex Geração 1"
+          component={List}
+          options={{
+            title: 'Pokedex Geração 1',
+            headerStyle: {
+              backgroundColor: '#f4511e',
+            },
+            headerTintColor: '#ffffff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+          }}
+        />
+        <Stack.Screen
+          name="Details"
+          component={Detail}
+          options={{
+            title: 'Details',
+            headerStyle: {
+              backgroundColor: '#f4511e',
+            },
+            headerTintColor: '#ffffff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

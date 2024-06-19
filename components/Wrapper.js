@@ -1,4 +1,3 @@
-import * as React from 'react';
 import styled from 'styled-components'
 import Constants from 'expo-constants';
 import { View } from 'react-native';
