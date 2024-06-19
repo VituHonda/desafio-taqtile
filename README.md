@@ -34,3 +34,4 @@ Terça:
 Procurar como é feito o consumo de APIs em RN
 
 Quarta:
+Procurar como fazer o share button
